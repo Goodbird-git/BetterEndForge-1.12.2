@@ -97,7 +97,9 @@ public class SilkMothNestBlock extends Block {
 		}
 		SilkMothEntity moth = new SilkMothEntity(worldIn);
 		moth.setLocationAndAngles(spawn.getX() + 0.5, spawn.getY() + 0.5, spawn.getZ() + 0.5, dir.getHorizontalAngle(), 0);
-		moth.setVelocity(dir.getXOffset() * 0.4, 0, dir.getZOffset() * 0.4);
+		moth.motionX = dir.getXOffset() * 0.4;
+		moth.motionY = 0;
+		moth.motionZ = dir.getZOffset() * 0.4;
 		moth.setHive(worldIn, pos);
 		worldIn.spawnEntity(moth);
 		worldIn.playSound(null, pos, SoundEvents.BLOCK_LAVA_POP, SoundCategory.BLOCKS, 1.0F, 1.0F);
