@@ -118,6 +118,6 @@ public class LargeAmaranitaBlock extends PlantBlock {
 		if(p_180646_1_.getValue(SHAPE)==TripleShape.TOP){
 			return SHAPE_TOP;
 		}
-		return NULL_AABB;
+		return SHAPE_BOTTOM;
 	}
 }
