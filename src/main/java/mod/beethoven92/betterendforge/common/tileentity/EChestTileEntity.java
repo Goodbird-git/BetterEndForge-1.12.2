@@ -1,6 +1,5 @@
 package mod.beethoven92.betterendforge.common.tileentity;
 
-import mod.beethoven92.betterendforge.common.init.ModTileEntityTypes;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.tileentity.TileEntityChest;
